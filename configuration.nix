@@ -77,7 +77,6 @@
     gcc
     bitwarden
     gh
-    obsidian
     zathura
     python3
     waybar
@@ -150,7 +149,6 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    enableNvidiaPatches = true;
   };
 
   # hint electron apps to use wayland
@@ -284,4 +282,8 @@
   };
 
   services.tailscale.enable = true;
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0"
+  ];
 }
