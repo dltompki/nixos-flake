@@ -146,10 +146,7 @@
   system.stateVersion = "23.05"; # Did you read the comment?
 
   # general hyprland
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  programs.hyprland.enable = true;
 
   # hint electron apps to use wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
