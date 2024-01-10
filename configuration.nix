@@ -64,7 +64,7 @@
   environment.systemPackages = with pkgs; [
     vieb
     kitty
-    wofi
+    rofi
     spotify
     pavucontrol
     hyprpaper
