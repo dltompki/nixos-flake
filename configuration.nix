@@ -62,7 +62,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vieb
     kitty
     rofi
     spotify
@@ -79,7 +78,6 @@
     gh
     zathura
     python3
-    waybar
     wget
     swaylock-effects
     where-is-my-sddm-theme
