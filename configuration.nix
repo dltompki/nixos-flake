@@ -21,6 +21,13 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
+  # fix from https://github.com/NixOS/nixpkgs/issues/180175
+  systemd.services.NetworkManager-wait-online = {
+    serviceConfig = {
+      ExecStart = ["" "${pkgs.networkmanager}/bin/nm-online -q"];
+    };
+  };
+
   # Set your time zone.
   time.timeZone = "US/Pacific";
 
@@ -80,7 +87,6 @@
     python3
     wget
     swaylock-effects
-    where-is-my-sddm-theme
     spotify
 
     # from https://wiki.hyprland.org/Useful-Utilities/Must-have/
@@ -192,15 +198,6 @@
   # give swaylock the correct password
   security.pam.services.swaylock = {};
 
-  # SDDM
-  services.xserver.enable = true;
-  services.xserver.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    enableHidpi = true;
-    theme = "where_is_my_sddm_theme";
-  };
-
   # bluetooth
   hardware.bluetooth = {
     enable = true;
@@ -281,4 +278,12 @@
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
   ];
+
+  systemd.user.services.start-hyprland = {
+    description = "To start hyprland when I login";
+    script = ''
+      Hyprland
+    '';
+    wantedBy = ["default.target"];
+  };
 }
