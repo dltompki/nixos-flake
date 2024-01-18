@@ -278,12 +278,4 @@
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
   ];
-
-  systemd.user.services.start-hyprland = {
-    description = "To start hyprland when I login";
-    script = ''
-      Hyprland
-    '';
-    wantedBy = ["default.target"];
-  };
 }
