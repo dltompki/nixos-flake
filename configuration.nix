@@ -87,6 +87,7 @@
     python3
     wget
     swaylock-effects
+    where-is-my-sddm-theme
     spotify
 
     # from https://wiki.hyprland.org/Useful-Utilities/Must-have/
@@ -197,6 +198,15 @@
 
   # give swaylock the correct password
   security.pam.services.swaylock = {};
+
+  # SDDM
+  services.xserver.enable = true;
+  services.xserver.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+    enableHidpi = true;
+    theme = "where_is_my_sddm_theme";
+  };
 
   # bluetooth
   hardware.bluetooth = {
