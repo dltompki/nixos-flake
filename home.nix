@@ -62,6 +62,17 @@
 
     ranger
     fzf
+
+    xdg-desktop-portal-hyprland
+
+    grim
+    slurp
+
+    obs-studio
+    obs-studio-plugins.wlrobs
+    mpv
+
+    wl-mirror
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -98,6 +109,7 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
     QT_QPA_PLATFORM = "wayland";
+    XDG_PICTURES_DIR = "~/Pictures";
   };
 
   # Let Home Manager install and manage itself.
@@ -107,7 +119,6 @@
     enable = true;
     interactiveShellInit = ''
       set fish_greeting
-      cat ~/.nix-profile/etc/profile.d/hm-session-vars.sh | babelfish | source
     '';
   };
 
@@ -423,6 +434,9 @@
         # Scroll through existing workspaces with mainMod + scroll
         "$mainMod, mouse_down, workspace, e+1"
         "$mainMod, mouse_up, workspace, e-1"
+
+        # Screenshot
+        ''$mainMod SHIFT, S, exec, grim -g "$(slurp)"''
       ];
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
@@ -440,5 +454,10 @@
       exec = ''qutebrowser -B /home/dylan/.local/share/qutebrowser-discord'';
       terminal = false;
     };
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
   };
 }
