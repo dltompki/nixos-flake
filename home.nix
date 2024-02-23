@@ -119,6 +119,7 @@
     enable = true;
     interactiveShellInit = ''
       set fish_greeting
+      zoxide init --cmd cd fish | source
     '';
   };
 
