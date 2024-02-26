@@ -121,6 +121,9 @@
       set fish_greeting
       zoxide init --cmd cd fish | source
     '';
+    shellAliases = {
+      lg = "lazygit";
+    };
   };
 
   programs.nixvim = {
