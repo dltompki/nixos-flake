@@ -73,6 +73,8 @@
     mpv
 
     wl-mirror
+
+    alejandra
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -123,6 +125,18 @@
     '';
     shellAliases = {
       lg = "lazygit";
+    };
+    functions = {
+      nix-rebuild = ''
+        pushd ~/.nixos/; or return
+        alejandra . &>/dev/null; or return
+        git diff -U0; or return
+        echo "NixOS Rebuilding..."; or return
+        sudo nixos-rebuild switch --flake ~/.nixos &>nixos-switch.log || cat nixos-switch.log | grep --color error && false
+        git commit -am "$(date --iso-8601=seconds)"; or return
+        popd; or return
+        dunstify "NixOS Rebuild OK!"; or return
+      '';
     };
   };
 
