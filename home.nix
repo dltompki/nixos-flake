@@ -146,6 +146,7 @@
     extraPackages = with pkgs; [
       alejandra
       prettierd
+      mdformat
     ];
 
     extraPlugins = with pkgs.vimPlugins; [
@@ -221,6 +222,7 @@
           typescriptreact = ["prettierd"];
           javascript = ["prettierd"];
           javascriptreact = ["prettierd"];
+          markdown = ["mdformat"];
         };
         formatOnSave = {
           timeoutMs = 500;
