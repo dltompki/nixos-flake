@@ -13,6 +13,7 @@ config.font = wezterm.font 'Fira Code Nerd Font'
 
 -- Tab bar stuff
 config.hide_tab_bar_if_only_one_tab = true
+config.use_fancy_tab_bar = true
 
 -- Window stuff
 config.window_background_opacity = 0.9
