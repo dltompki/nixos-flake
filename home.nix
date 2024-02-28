@@ -127,16 +127,7 @@
       lg = "lazygit";
     };
     functions = {
-      nix-rebuild = ''
-        pushd ~/.nixos/; or return
-        alejandra . &>/dev/null; or return
-        git diff -U0; or return
-        echo "NixOS Rebuilding..."; or return
-        sudo nixos-rebuild switch --flake ~/.nixos &>nixos-switch.log || cat nixos-switch.log | grep --color error && false
-        git commit -am "$(date --iso-8601=seconds)"; or return
-        popd; or return
-        dunstify "NixOS Rebuild OK!"; or return
-      '';
+      nix-rebuild = builtins.readFile ./dotfiles/nix-rebuild.fish;
     };
   };
 
@@ -479,5 +470,10 @@
   programs.zoxide = {
     enable = true;
     enableFishIntegration = true;
+  };
+
+  programs.wezterm = {
+    enable = true;
+    extraConfig = builtins.readFile ./dotfiles/wezterm.lua;
   };
 }
