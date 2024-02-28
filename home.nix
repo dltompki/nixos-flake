@@ -400,7 +400,7 @@
 
       # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
       bind = [
-        "$mainMod, Q, exec, kitty"
+        "$mainMod, Q, exec, wezterm"
         "$mainMod, S, exec, rofi-rbw"
         "$mainMod, C, killactive, "
         "$mainMod, M, exit, "
