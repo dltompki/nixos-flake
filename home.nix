@@ -482,7 +482,7 @@
     x11.enable = true;
     size = 32;
 
-    name = "Phinger";
+    name = "phinger-cursors";
     package = pkgs.phinger-cursors;
   };
 }
