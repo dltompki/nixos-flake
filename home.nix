@@ -482,7 +482,7 @@
     x11.enable = true;
     size = 32;
 
-    name = "Vanilla-DMZ";
-    package = pkgs.vanilla-dmz;
+    name = "Phinger";
+    package = pkgs.phinger-cursors;
   };
 }
