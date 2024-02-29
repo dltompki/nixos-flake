@@ -476,4 +476,13 @@
     enable = true;
     extraConfig = builtins.readFile ./dotfiles/wezterm.lua;
   };
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+    size = 32;
+
+    name = "Vanilla-DMZ";
+    package = pkgs.vanilla-dmz;
+  };
 }
