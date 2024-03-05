@@ -406,7 +406,7 @@
         "$mainMod, M, exit, "
         "$mainMod, E, exec, dolphin"
         "$mainMod, V, togglefloating, "
-        "$mainMod, R, exec, rofi -show drun"
+        "$mainMod, R, exec, /home/dylan/.config/rofi/scripts/launcher_t3"
         "$mainMod, W, exec, swaylock"
         "$mainMod, P, pseudo, # dwindle"
         "$mainMod, J, togglesplit, # dwindle"
