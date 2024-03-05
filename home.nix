@@ -493,7 +493,7 @@
       package = pkgs.whitesur-gtk-theme;
     };
     iconTheme = {
-      name = "WhiteSur-Dark";
+      name = "WhiteSur";
       package = pkgs.whitesur-icon-theme;
     };
   };
