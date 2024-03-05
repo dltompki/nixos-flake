@@ -497,4 +497,6 @@
       package = pkgs.whitesur-icon-theme;
     };
   };
+
+  qt.platformTheme = "gtk";
 }
