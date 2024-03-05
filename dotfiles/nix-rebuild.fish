@@ -9,6 +9,6 @@ if test $status -ne 0
   return
 end
 
-git commit -am "$(date --iso-8601=seconds)"; or return
+git commit -a; or return
 popd; or return
 dunstify "NixOS Rebuild OK!"; or return

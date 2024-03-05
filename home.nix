@@ -487,6 +487,7 @@
   };
 
   gtk = {
+    enable = true;
     theme = {
       name = "WhiteSur-Dark";
       package = pkgs.whitesur-gtk-theme;
