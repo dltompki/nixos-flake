@@ -485,4 +485,15 @@
     name = "phinger-cursors";
     package = pkgs.phinger-cursors;
   };
+
+  gtk = {
+    theme = {
+      name = "WhiteSur-Dark";
+      package = pkgs.whitesur-gtk-theme;
+    };
+    iconTheme = {
+      name = "WhiteSur-Dark";
+      package = pkgs.whitesur-icon-theme;
+    };
+  };
 }
