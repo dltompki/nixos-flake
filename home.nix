@@ -160,33 +160,21 @@
       vimtex.enable = true;
       treesitter.enable = true;
       bufferline.enable = true;
-      nvim-cmp = {
+      cmp = {
         enable = true;
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "buffer";}
-          {name = "path";}
-          {name = "luasnip";}
-        ];
-        mapping = {
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
-          "<Tab>" = {
-            action = ''
-              function(fallback)
-                if cmp.visible() then
-                  cmp.select_next_item()
-                else
-                  fallback()
-                end
-              end
-            '';
-            modes = [
-              "i"
-              "s"
-            ];
+        settings = {
+          sources = [
+            {name = "nvim_lsp";}
+            {name = "buffer";}
+            {name = "path";}
+            {name = "luasnip";}
+          ];
+          mapping = {
+            "<CR>" = "cmp.mapping.confirm({ select = true })";
+            "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           };
+          snippet.expand = "luasnip";
         };
-        snippet.expand = "luasnip";
       };
       lsp = {
         enable = true;
