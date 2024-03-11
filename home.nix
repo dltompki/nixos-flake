@@ -75,6 +75,8 @@
     wl-mirror
 
     alejandra
+
+    feh
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
