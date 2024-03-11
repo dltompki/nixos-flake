@@ -113,7 +113,7 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
     QT_QPA_PLATFORM = "wayland";
-    XDG_PICTURES_DIR = "~/Pictures";
+    GRIM_DEFAULT_DIR = "/home/dylan/Pictures/Screenshots";
   };
 
   # Let Home Manager install and manage itself.
