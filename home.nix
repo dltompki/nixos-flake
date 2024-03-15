@@ -489,4 +489,8 @@
   };
 
   qt.platformTheme = "gtk";
+
+  xdg.mimeApps.defaultApplications = {
+    "application/pdf" = ["zathura.desktop"];
+  };
 }
