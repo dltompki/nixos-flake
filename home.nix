@@ -490,7 +490,10 @@
 
   qt.platformTheme = "gtk";
 
-  xdg.mimeApps.defaultApplications = {
-    "application/pdf" = ["org.pwmt.zathura.desktop"];
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "application/pdf" = ["org.pwmt.zathura.desktop"];
+    };
   };
 }
