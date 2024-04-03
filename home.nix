@@ -184,9 +184,9 @@
         enable = true;
         servers = {
           ltex.enable = true;
-          rnix-lsp.enable = true;
           tsserver.enable = true;
           eslint.enable = true;
+          nil_ls.enable = true;
         };
       };
       luasnip = {
@@ -214,6 +214,7 @@
       };
       gitgutter.enable = true;
       toggleterm.enable = true;
+      autoclose.enable = true;
     };
 
     options = {
