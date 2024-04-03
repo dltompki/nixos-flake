@@ -257,6 +257,14 @@
 
       vim.api.nvim_set_keymap("n", "<leader>tg", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
     '';
+
+    autoCmd = [
+      {
+        event = ["BufWritePre"];
+        pattern = ["*.rkt"];
+        command = "%!raco fmt";
+      }
+    ];
   };
 
   programs.zathura = {
