@@ -265,6 +265,31 @@
         command = "%!raco fmt";
       }
     ];
+
+    keymaps = [
+      {
+        mode = "t";
+        key = "<Esc>";
+        action = "<C-\><C-n>";
+      }
+      {
+        key = "<Leader>e";
+        action = "<Cmd>Neotree<CR>";
+      }
+      {
+        key = "<Leader>bb";
+        action = "<Cmd>BufferLinePick<CR>";
+      }
+      {
+        key = "<Leader>bc";
+        action = "<Cmd>BufferLinePickClose<CR>";
+      }
+      {
+        key = "<Esc>";
+        mode = "n";
+        action = "<Cmd>noh<CR>";
+      }
+    ];
   };
 
   programs.zathura = {
