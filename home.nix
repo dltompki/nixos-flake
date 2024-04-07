@@ -206,10 +206,18 @@
           javascript = ["prettierd"];
           javascriptreact = ["prettierd"];
           markdown = ["mdformat"];
+          racket = ["racket_fmt"];
         };
         formatOnSave = {
           timeoutMs = 500;
           lspFallback = true;
+        };
+        formatters = {
+          racket_fmt = {
+            command = "/etc/profiles/per-user/dylan/bin/raco";
+            args = ["fmt"];
+            stdin = true;
+          };
         };
       };
       gitgutter.enable = true;
@@ -257,14 +265,6 @@
 
       vim.api.nvim_set_keymap("n", "<leader>tg", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
     '';
-
-    autoCmd = [
-      {
-        event = ["BufWritePre"];
-        pattern = ["*.rkt"];
-        command = "%!raco fmt";
-      }
-    ];
 
     keymaps = [
       {
