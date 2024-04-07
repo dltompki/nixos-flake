@@ -270,7 +270,7 @@
       {
         mode = "t";
         key = "<Esc>";
-        action = "<C-\><C-n>";
+        action = "<C-\\><C-n>";
       }
       {
         key = "<Leader>e";
