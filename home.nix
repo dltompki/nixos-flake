@@ -215,7 +215,7 @@
         formatters = {
           racket_fmt = {
             command = "/etc/profiles/per-user/dylan/bin/raco";
-            args = ["fmt"];
+            args = ["fmt" "--width" "90"];
             stdin = true;
           };
         };
