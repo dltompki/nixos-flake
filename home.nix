@@ -238,7 +238,10 @@
       wrap = false;
     };
 
-    globals.mapleader = " ";
+    globals = {
+      mapleader = " ";
+      guifont = "FiraCode Nerd Font:h11";
+    };
 
     extraConfigLuaPost = ''
       local Terminal  = require('toggleterm.terminal').Terminal
