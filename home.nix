@@ -236,11 +236,11 @@
       fillchars.eob = " ";
       ignorecase = true;
       wrap = false;
+      guifont = "FiraCode Nerd Font:h11";
     };
 
     globals = {
       mapleader = " ";
-      guifont = "FiraCode Nerd Font:h11";
     };
 
     extraConfigLuaPost = ''
