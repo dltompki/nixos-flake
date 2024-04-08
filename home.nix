@@ -289,6 +289,10 @@
         mode = "n";
         action = "<Cmd>noh<CR>";
       }
+      {
+        key = "<Leader>r";
+        action = ''<Cmd>TermExec cmd="raco cover %"<CR>'';
+      }
     ];
   };
 
