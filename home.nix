@@ -144,6 +144,7 @@
       alejandra
       prettierd
       mdformat
+      ripgrep # for telescope.nvim
     ];
 
     extraPlugins = with pkgs.vimPlugins; [
@@ -225,6 +226,18 @@
       gitgutter.enable = true;
       toggleterm.enable = true;
       autoclose.enable = true;
+      telescope = {
+        enable = true;
+        extensions = {
+          fzf-native.enable = true;
+        };
+        keymaps = {
+          "<Leader>fg" = "live_grep";
+          "<Leader>ff" = "find_files";
+          "<Leader>fb" = "buffers";
+          "<Leader>fh" = "help_tags";
+        };
+      };
     };
 
     options = {
