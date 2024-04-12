@@ -288,7 +288,7 @@
     keymaps = [
       {
         mode = "t";
-        key = "<Esc>";
+        key = "<S-Esc>";
         action = "<C-\\><C-n>";
       }
       {
