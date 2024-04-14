@@ -447,6 +447,9 @@
       # Example windowrule v2
       # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
       # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
+      windowrulev2 = [
+        "float,title:rofi"
+      ];
 
       # See https://wiki.hyprland.org/Configuring/Keywords/ for more
       "$mainMod" = "SUPER";
@@ -454,12 +457,12 @@
       # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
       bind = [
         "$mainMod, Q, exec, wezterm"
-        "$mainMod, S, exec, rofi-rbw"
+        ''$mainMod, S, exec, rofi-rbw --selector-args \"-normal-window\"''
         "$mainMod, C, killactive, "
         "$mainMod, M, exit, "
         "$mainMod, E, exec, dolphin"
         "$mainMod, V, togglefloating, "
-        "$mainMod, R, exec, /home/dylan/.config/rofi/scripts/launcher_t3"
+        "$mainMod, R, exec, rofi -normal-window -show drun"
         "$mainMod, W, exec, swaylock"
         "$mainMod, P, pseudo, # dwindle"
         "$mainMod, J, togglesplit, # dwindle"
