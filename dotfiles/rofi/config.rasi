@@ -157,3 +157,4 @@ configuration {
       fallback-icon: "application-x-addon";
   }
 }
+@theme "/home/dylan/.config/rofi/current.rasi"
