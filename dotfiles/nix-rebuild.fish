@@ -9,6 +9,7 @@ if test $status -ne 0
   return
 end
 
-git commit -a; or return
+git commit -va; or return
+git push; or return
 popd; or return
 dunstify "NixOS Rebuild OK!"; or return
