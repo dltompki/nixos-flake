@@ -92,7 +92,9 @@
     python3
     wget
     swaylock-effects
-    where-is-my-sddm-theme
+    (where-is-my-sddm-theme.override {
+      variants = ["qt5"];
+    })
     spotify
 
     # from https://wiki.hyprland.org/Useful-Utilities/Must-have/
