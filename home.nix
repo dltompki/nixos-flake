@@ -452,6 +452,7 @@
       # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
       windowrulev2 = [
         "float,title:rofi"
+        "suppressevent maximize,class:.*"
       ];
 
       # See https://wiki.hyprland.org/Configuring/Keywords/ for more
