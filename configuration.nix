@@ -202,7 +202,7 @@
     enable = true;
     wayland.enable = true;
     enableHidpi = true;
-    theme = "where_is_my_sddm_theme";
+    theme = "where_is_my_sddm_theme_qt5";
   };
 
   # bluetooth
