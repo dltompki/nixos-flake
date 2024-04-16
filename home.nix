@@ -539,10 +539,9 @@
 
   home.pointerCursor = {
     gtk.enable = true;
-    x11.enable = true;
     size = 32;
 
-    name = "phinger-cursors";
+    name = "phinger-cursors-dark";
     package = pkgs.phinger-cursors;
   };
 
