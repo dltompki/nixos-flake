@@ -141,6 +141,7 @@
     };
     functions = {
       nix-rebuild = builtins.readFile ./dotfiles/nix-rebuild.fish;
+      amplify = builtins.readFile ./dotfiles/amplify.fish;
     };
   };
 
