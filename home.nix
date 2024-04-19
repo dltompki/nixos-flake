@@ -245,6 +245,7 @@
           "<Leader>fh" = "help_tags";
         };
       };
+      rainbow-delimiters.enable = true;
     };
 
     options = {
