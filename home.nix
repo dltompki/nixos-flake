@@ -305,7 +305,7 @@
       }
       {
         key = "<Leader>e";
-        action = "<Cmd>Neotree<CR>";
+        action = "<Cmd>Neotree toggle right<CR>";
       }
       {
         key = "<Leader>bb";
