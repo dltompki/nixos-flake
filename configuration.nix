@@ -286,7 +286,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet -tr --asterisks --cmd Hyprland";
+        command = "${pkgs.greetd.wlgreet}/bin/wlgreet --command Hyprland";
         user = "dylan";
       };
     };
