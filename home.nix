@@ -124,9 +124,6 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
-    QT_QPA_PLATFORM = "wayland";
-    GRIM_DEFAULT_DIR = "/home/dylan/Pictures/Screenshots";
-    QT_SCALE_FACTOR_ROUNDING_POLICY = "RoundPreferFloor"; # fix blurry text in qutebrowser on wayland
   };
 
   # Let Home Manager install and manage itself.
