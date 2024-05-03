@@ -52,7 +52,7 @@
     pinentry-qt
     nodejs_20
     qutebrowser
-    libsForQt5.qt5.qtwayland
+    kdePackages.qtwayland
     brightnessctl
     docker
 
