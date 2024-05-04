@@ -49,7 +49,6 @@
     vscode
     rbw
     rofi-rbw-wayland
-    ydotool # for rofi-rbw
     pinentry-qt
     nodejs_20
     qutebrowser
@@ -466,7 +465,7 @@
       # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
       bind = [
         "$mainMod, Q, exec, wezterm"
-        ''$mainMod, S, exec, rofi-rbw --typer ydotool --selector-args \"-normal-window\"''
+        ''$mainMod, S, exec, rofi-rbw --selector-args \"-normal-window\"''
         "$mainMod, C, killactive, "
         "$mainMod, M, exit, "
         "$mainMod, E, exec, dolphin"
