@@ -465,7 +465,7 @@
       # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
       bind = [
         "$mainMod, Q, exec, wezterm"
-        ''$mainMod, S, exec, rofi-rbw --selector-args \"-normal-window\"''
+        ''$mainMod, S, exec, rofi-rbw --typing-key-delay 1 --selector-args \"-normal-window\"''
         "$mainMod, C, killactive, "
         "$mainMod, M, exit, "
         "$mainMod, E, exec, dolphin"
