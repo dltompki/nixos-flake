@@ -300,4 +300,6 @@
   };
 
   powerManagement.enable = true;
+
+  services.asusd.enable = true;
 }
