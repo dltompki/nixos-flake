@@ -103,9 +103,6 @@
 
     macchina
 
-    taskwarrior
-    taskwarrior-tui
-
     jdk
 
     lshw

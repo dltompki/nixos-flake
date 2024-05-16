@@ -87,6 +87,9 @@
 
     yarn
     gradle
+
+    taskwarrior3
+    taskwarrior-tui
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
