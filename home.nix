@@ -154,7 +154,6 @@
     extraPackages = with pkgs; [
       alejandra
       prettierd
-      mdformat
       ripgrep # for telescope.nvim
     ];
 
@@ -223,7 +222,7 @@
           typescriptreact = ["prettierd"];
           javascript = ["prettierd"];
           javascriptreact = ["prettierd"];
-          markdown = ["mdformat"];
+          markdown = ["prettierd"];
           racket = ["racket_fmt"];
         };
         formatOnSave = {
