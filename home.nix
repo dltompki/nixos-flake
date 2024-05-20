@@ -324,7 +324,7 @@
       }
       {
         key = "<Leader>r";
-        action = ''<Cmd>TermExec cmd="raco cover %"<CR>'';
+        action = ''<Cmd>TermExec cmd="racket % && raco cover %"<CR>'';
       }
     ];
   };
