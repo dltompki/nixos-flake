@@ -369,7 +369,7 @@
         "waybar &"
         "hyprpaper &"
         "dunst &"
-        "/usr/lib/polkit-kde-authentication-agent-1"
+        "lxqt-policykit-agent"
       ];
 
       input = {

@@ -97,7 +97,7 @@
     # from https://wiki.hyprland.org/Useful-Utilities/Must-have/
     dunst
     xdg-desktop-portal-hyprland
-    polkit-kde-agent
+    lxqt.lxqt-policykit
     qt6.qtwayland
     libsForQt5.qt5.qtwayland
 
