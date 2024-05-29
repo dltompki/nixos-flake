@@ -90,6 +90,8 @@
 
     taskwarrior3
     taskwarrior-tui
+
+    thunderbird
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
