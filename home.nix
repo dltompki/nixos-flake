@@ -92,6 +92,8 @@
     taskwarrior-tui
 
     thunderbird
+
+    gnu-cobol
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
