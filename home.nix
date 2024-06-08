@@ -211,7 +211,7 @@
           ltex.enable = true;
           tsserver.enable = true;
           eslint.enable = true;
-          nil_ls.enable = true;
+          nil-ls.enable = true;
         };
       };
       luasnip = {
@@ -262,7 +262,7 @@
       };
     };
 
-    options = {
+    opts = {
       number = true;
       relativenumber = true;
       tabstop = 2;

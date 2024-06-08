@@ -157,9 +157,6 @@
   # hint electron apps to use wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  # screen-sharing hyprland
-  xdg.portal.wlr.enable = true;
-
   # for spotify to install
   nixpkgs.config.allowUnfree = true;
 
