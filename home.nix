@@ -182,7 +182,6 @@
     plugins = {
       alpha = {
         enable = true;
-        iconsEnabled = true;
         theme = "dashboard";
       };
       vimtex.enable = true;
@@ -226,25 +225,26 @@
       lualine.enable = true;
       conform-nvim = {
         enable = true;
-        formattersByFt = {
-          tex = ["latexindent"];
-          nix = ["alejandra"];
-          typescript = ["prettierd"];
-          typescriptreact = ["prettierd"];
-          javascript = ["prettierd"];
-          javascriptreact = ["prettierd"];
-          markdown = ["prettierd"];
-          racket = ["racket_fmt"];
-        };
-        formatOnSave = {
-          timeoutMs = 500;
-          lspFallback = true;
-        };
-        formatters = {
-          racket_fmt = {
-            command = "/etc/profiles/per-user/dylan/bin/raco";
-            args = ["fmt" "--width" "90"];
-            stdin = true;
+        settings = {
+          formatters_by_ft = {
+            tex = ["latexindent"];
+            nix = ["alejandra"];
+            typescript = ["prettierd"];
+            typescriptreact = ["prettierd"];
+            javascript = ["prettierd"];
+            javascriptreact = ["prettierd"];
+            markdown = ["prettierd"];
+            racket = ["racket_fmt"];
+          };
+          format_on_save = {
+            lsp_format = "fallback";
+          };
+          formatters = {
+            racket_fmt = {
+              command = "/etc/profiles/per-user/dylan/bin/raco";
+              args = ["fmt" "--width" "90"];
+              stdin = true;
+            };
           };
         };
       };
