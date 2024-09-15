@@ -29,5 +29,8 @@ config.visual_bell = {
   fade_out_duration_ms = 150,
 }
 
+-- wez/wezterm#5990
+config.front_end = "WebGpu"
+
 -- and finally, return the configuration to wezterm
 return config
