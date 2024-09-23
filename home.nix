@@ -51,7 +51,6 @@
     rofi-rbw-wayland
     pinentry-qt
     nodejs_20
-    qutebrowser
     kdePackages.qtwayland
     brightnessctl
     docker
@@ -100,7 +99,6 @@
     zoom-us
 
     firefox
-    brave
 
     cargo
 
