@@ -358,7 +358,7 @@
         "desc:Lenovo Group Limited LEN P32p-20 VNA83LFH,preferred,auto,1.5"
         "desc:Lenovo Group Limited LEN P32p-20 VNA5WK47,preferred,auto,1.5"
         "desc:LG Electronics LG ULTRAWIDE 201NTLEK6552,preferred,-3440x0,1"
-        "desc:Chimei Innolux Corporation 0x152A,preferred,0x0,1.2"
+        "desc:Chimei Innolux Corporation 0x152A,preferred,0x0,1"
         ",preferred,auto,auto"
       ];
 
