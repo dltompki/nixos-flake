@@ -368,7 +368,6 @@
 
       env = [
         # independent toolkit scaling vars
-        "GDK_SCALE,2"
         "XCURSOR_SIZE,24"
         # from nvidia section of hyprland wiki
         "LIBVA_DRIVER_NAME,nvidia"
