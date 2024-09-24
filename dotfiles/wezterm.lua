@@ -17,9 +17,6 @@ config.hide_tab_bar_if_only_one_tab = true
 -- Window stuff
 config.window_background_opacity = 0.9
 
--- Temporary fix since wayland support is broken
-config.enable_wayland = false
-
 -- Replace audible bell with visual one
 config.audible_bell = "Disabled";
 config.visual_bell = {
