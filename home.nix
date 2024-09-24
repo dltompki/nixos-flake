@@ -103,7 +103,6 @@
     cargo
 
     jetbrains.idea-ultimate
-    jdk8
 
     slack
   ];
