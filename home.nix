@@ -1,5 +1,5 @@
 {
-  config,
+  inputs,
   pkgs,
   ...
 }: {
@@ -555,6 +555,7 @@
   programs.wezterm = {
     enable = true;
     extraConfig = builtins.readFile ./dotfiles/wezterm.lua;
+    package = inputs.wezterm.packages.${pkgs.system}.default;
   };
 
   home.pointerCursor = {
