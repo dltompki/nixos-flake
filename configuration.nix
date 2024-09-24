@@ -117,6 +117,8 @@
     babelfish
 
     tree
+
+    jdk8
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -294,4 +296,9 @@
   powerManagement.enable = true;
 
   services.asusd.enable = true;
+
+  environment.extraSetup = ''
+    ln -s ${pkgs.jdk8}/bin/java $out/bin/java8
+    ln -s ${pkgs.jdk8}/lib $out/lib/jdk8
+  '';
 }
