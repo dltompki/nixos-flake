@@ -587,4 +587,6 @@
       "application/pdf" = ["org.pwmt.zathura.desktop"];
     };
   };
+
+  services.gnome-keyring.enable = true;
 }
