@@ -84,7 +84,6 @@
 
     localsend
 
-    yarn
     gradle
 
     taskwarrior3
@@ -105,6 +104,8 @@
     jetbrains.idea-ultimate
 
     slack
+
+    hadoop
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
