@@ -216,9 +216,9 @@
         enable = true;
         servers = {
           ltex.enable = true;
-          tsserver.enable = true;
+          ts_ls.enable = true;
           eslint.enable = true;
-          nil-ls.enable = true;
+          nil_ls.enable = true;
         };
       };
       luasnip = {
@@ -268,6 +268,7 @@
           "<Leader>fh" = "help_tags";
         };
       };
+      web-devicons.enable = true;
     };
 
     opts = {
