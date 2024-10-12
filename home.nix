@@ -102,6 +102,7 @@
     cargo
 
     jetbrains.idea-ultimate
+    keepass #trying to store github creds
 
     slack
 
