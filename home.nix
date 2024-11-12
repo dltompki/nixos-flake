@@ -151,6 +151,7 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+    GSK_RENDERER = "gl";
   };
 
   # Let Home Manager install and manage itself.
