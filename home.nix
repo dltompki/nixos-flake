@@ -132,8 +132,6 @@
     ".config/rofi/config.rasi".source = dotfiles/rofi/config.rasi;
     ".config/rofi/current.rasi".source = dotfiles/rofi/current.rasi;
     ".config/flameshot/flameshot.ini".source = dotfiles/flameshot.ini;
-
-    ".config/environment.d/gsk.conf".source = ./dotfiles/gsk.conf;
   };
 
   # Home Manager can also manage your environment variables through
