@@ -284,11 +284,12 @@
     vt = 2;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet -tr --asterisks --cmd Hyprland";
+        command = "${pkgs.cage}/bin/cage -s -- regreet";
         user = "dylan";
       };
     };
   };
+  programs.regreet.enable = true;
 
   environment.sessionVariables = {
     # EDITOR = "emacs";
