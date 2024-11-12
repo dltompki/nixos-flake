@@ -294,6 +294,7 @@
     # EDITOR = "emacs";
     GRIM_DEFAULT_DIR = "/home/dylan/Pictures/Screenshots";
     QT_SCALE_FACTOR_ROUNDING_POLICY = "RoundPreferFloor"; # fix blurry text in qutebrowser on wayland
+    GSK_RENDERER = "gl";
   };
 
   powerManagement.enable = true;
