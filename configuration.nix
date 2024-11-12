@@ -304,4 +304,6 @@
   environment.extraSetup = ''
     ln -s ${pkgs.jdk}/lib $out/lib/jdk
   '';
+
+  boot.kernelParams = ["video:DP-2:D"];
 }
