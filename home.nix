@@ -112,6 +112,8 @@
     flameshot
 
     awscli2
+
+    dissent
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -548,14 +550,6 @@
     };
   };
   programs.waybar.enable = true;
-
-  xdg.desktopEntries = {
-    discord = {
-      name = "Discord";
-      exec = ''qutebrowser -B /home/dylan/.local/share/qutebrowser-discord'';
-      terminal = false;
-    };
-  };
 
   programs.zoxide = {
     enable = true;
