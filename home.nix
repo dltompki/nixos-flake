@@ -113,7 +113,7 @@
 
     awscli2
 
-    dissent
+    discord
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
