@@ -107,7 +107,7 @@
 
     slack
 
-    hadoop
+    spark
 
     flameshot
 
