@@ -107,6 +107,7 @@
     macchina
 
     jdk
+    jdk11
 
     lshw
 
@@ -120,8 +121,6 @@
     babelfish
 
     tree
-
-    jdk
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -303,5 +302,6 @@
 
   environment.extraSetup = ''
     ln -s ${pkgs.jdk}/lib $out/lib/jdk
+    ln -s ${pkgs.jdk11}/lib $out/lib/jdk11
   '';
 }
