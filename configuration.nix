@@ -108,6 +108,7 @@
 
     jdk
     jdk11
+    jdk8
 
     lshw
 
@@ -301,7 +302,8 @@
   services.asusd.enable = true;
 
   environment.extraSetup = ''
-    ln -s ${pkgs.jdk}/lib $out/lib/jdk
+    ln -s ${pkgs.jdk}/lib   $out/lib/jdk
     ln -s ${pkgs.jdk11}/lib $out/lib/jdk11
+    ln -s ${pkgs.jdk8}/lib  $out/lib/jdk8
   '';
 }
