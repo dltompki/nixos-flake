@@ -541,6 +541,10 @@
         ''$mainMod SHIFT, S, exec, grim -g "$(slurp)"''
       ];
 
+      debug = {
+        disable_logs = false;
+      };
+
       # Move/resize windows with mainMod + LMB/RMB and dragging
       bindm = [
         "$mainMod, mouse:272, movewindow"
