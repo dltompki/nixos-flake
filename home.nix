@@ -91,8 +91,6 @@
 
     thunderbird
 
-    gnu-cobol
-
     hoppscotch
 
     zoom-us
