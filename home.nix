@@ -480,7 +480,7 @@
       # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
       # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
       windowrulev2 = [
-        "float,title:rofi"
+        "float,title:rofi.*"
         "suppressevent maximize,class:.*"
       ];
 
