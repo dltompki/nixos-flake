@@ -101,6 +101,7 @@
 
     jetbrains.idea-ultimate
     jetbrains.webstorm
+    jetbrains.pycharm-professional
     keepass #trying to store github creds
 
     slack
