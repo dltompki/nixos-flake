@@ -342,14 +342,23 @@
       {
         key = "<Leader>e";
         action = "<Cmd>Neotree toggle right<CR>";
+        options = {
+          desc = "Toggle File Tree";
+        };
       }
       {
         key = "<Leader>bb";
         action = "<Cmd>BufferLinePick<CR>";
+        options = {
+          desc = "Pick Tab";
+        };
       }
       {
         key = "<Leader>bc";
         action = "<Cmd>BufferLinePickClose<CR>";
+        options = {
+          desc = "Close Tab";
+        };
       }
       {
         key = "<Esc>";
@@ -359,6 +368,13 @@
       {
         key = "<Leader>r";
         action = ''<Cmd>TermExec cmd="raco cover % && echo === === === && racket %"<CR>'';
+      }
+      {
+        key = "<Leader>ca";
+        action = ''<cmd>lua vim.lsp.buf.code_action()<CR>'';
+        options = {
+          desc = "LSP Code Action";
+        };
       }
     ];
   };
