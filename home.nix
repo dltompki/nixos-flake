@@ -376,6 +376,13 @@
           desc = "LSP Code Action";
         };
       }
+      {
+        key = "<Leader>cr";
+        action = ''<cmd>lua vim.lsp.buf.rename()<CR>'';
+        options = {
+          desc = "LSP Rename";
+        };
+      }
     ];
   };
 
