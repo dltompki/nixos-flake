@@ -614,7 +614,10 @@
     };
   };
 
-  qt.platformTheme = "gtk";
+  qt = {
+    enable = true;
+    style.name = "breeze";
+  };
 
   xdg.mimeApps = {
     enable = true;
