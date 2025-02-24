@@ -124,7 +124,6 @@
 
     wireshark
     libsForQt5.breeze-qt5
-    libsForQt5.qt5ct
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
