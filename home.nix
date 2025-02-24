@@ -123,7 +123,6 @@
     zellij
 
     wireshark
-    libsForQt5.breeze-qt5
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
