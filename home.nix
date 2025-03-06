@@ -114,7 +114,7 @@
 
     zellij
 
-    inputs.zen-browser
+    inputs.zen-browser.packages."${system}".default
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
