@@ -236,7 +236,7 @@
         enable = true;
         fromVscode = [{}];
       };
-      neo-tree.enable = true;
+      oil.enable = true;
       which-key.enable = true;
       lualine.enable = true;
       conform-nvim = {
