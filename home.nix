@@ -335,9 +335,9 @@
       }
       {
         key = "<Leader>e";
-        action = "<Cmd>Neotree toggle right<CR>";
+        action = "<Cmd>Oil<CR>";
         options = {
-          desc = "Toggle File Tree";
+          desc = "Toggle File Explorer";
         };
       }
       {
