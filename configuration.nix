@@ -320,6 +320,4 @@
     ln -s ${pkgs.jdk11}/lib $out/lib/jdk11
     ln -s ${pkgs.jdk8}/lib  $out/lib/jdk8
   '';
-
-  programs.gnupg.agent.enable = true;
 }
