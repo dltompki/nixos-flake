@@ -321,5 +321,8 @@
     ln -s ${pkgs.jdk8}/lib  $out/lib/jdk8
   '';
 
-  programs.gnupg.agent.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryPackage = pkgs.pinentry-qt;
+  };
 }
