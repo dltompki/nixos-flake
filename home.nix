@@ -620,6 +620,9 @@
     enable = true;
     defaultApplications = {
       "application/pdf" = ["org.pwmt.zathura.desktop"];
+      "x-scheme-handler/http" = "zen-browser.desktop";
+      "x-scheme-handler/https" = "zen-browser.desktop";
+      "text/html" = "zen-browser.desktop";
     };
   };
 
