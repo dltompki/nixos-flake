@@ -200,7 +200,10 @@
         enable = true;
         theme = "dashboard";
       };
-      vimtex.enable = true;
+      vimtex = {
+        enable = true;
+        texlivePackage = pkgs.texlive.combined.scheme-full;
+      };
       treesitter.enable = true;
       bufferline.enable = true;
       cmp = {
