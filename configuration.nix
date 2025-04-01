@@ -86,7 +86,16 @@
     lazygit
     ripgrep
     git
-    texlive.combined.scheme-full
+
+    (pkgs.texlive.combine {
+      inherit
+        (pkgs.texlive)
+        scheme-full
+        enumitem
+        tcolorbox
+        ;
+    })
+
     wl-clipboard
     gcc
     bitwarden
