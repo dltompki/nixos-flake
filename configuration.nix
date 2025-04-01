@@ -86,7 +86,7 @@
     lazygit
     ripgrep
     git
-    texliveFull
+    texlive.combined.scheme-full
     wl-clipboard
     gcc
     bitwarden
