@@ -430,7 +430,6 @@
         "XDG_SESSION_TYPE,wayland"
         "GBM_BACKEND,nvidia-drm"
         "__GLX_VENDOR_LIBRARY_NAME,nvidia"
-        "WLR_NO_HARDWARE_CURSORS,1"
       ];
 
       exec-once = [
@@ -451,6 +450,10 @@
         };
 
         sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
+      };
+
+      cursor = {
+        no_hardware_cursors = 1;
       };
 
       general = {
