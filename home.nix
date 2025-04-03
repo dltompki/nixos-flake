@@ -115,6 +115,8 @@
     zellij
 
     inputs.zen-browser.packages."${system}".default
+
+    texliveFull
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -202,7 +204,7 @@
       };
       vimtex = {
         enable = true;
-        texlivePackage = pkgs.texlive.combined.scheme-full;
+        texlivePackage = null;
       };
       treesitter.enable = true;
       bufferline.enable = true;
