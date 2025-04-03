@@ -202,14 +202,7 @@
       };
       vimtex = {
         enable = true;
-        texlivePackage = pkgs.texlive.combine {
-          inherit
-            (pkgs.texlive)
-            scheme-medium
-            enumitem
-            tcolorbox
-            ;
-        };
+        texlivePackage = pkgs.texlive.combined.scheme-full;
       };
       treesitter.enable = true;
       bufferline.enable = true;
