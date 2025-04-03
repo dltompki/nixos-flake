@@ -202,6 +202,7 @@
       };
       vimtex = {
         enable = true;
+        texlivePackage = pkgs.texlive.combined.scheme-full;
       };
       treesitter.enable = true;
       bufferline.enable = true;
