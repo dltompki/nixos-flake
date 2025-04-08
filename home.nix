@@ -93,12 +93,9 @@
 
     jetbrains.idea-ultimate
     jetbrains.webstorm
-    jetbrains.pycharm-professional
     keepass #trying to store github creds
 
     slack
-
-    spark
 
     flameshot
 
@@ -106,11 +103,7 @@
 
     discord
 
-    sbt
-
     prismlauncher
-
-    uv
 
     zellij
 
