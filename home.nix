@@ -375,6 +375,13 @@
           desc = "LSP Rename";
         };
       }
+      {
+        key = "<Leader>cd";
+        action = ''<cmd>lua vim.diagnostic.open_float()<CR>'';
+        options = {
+          desc = "Show Diagnostic";
+        };
+      }
     ];
 
     autoCmd = [
