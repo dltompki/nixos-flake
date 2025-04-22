@@ -294,7 +294,7 @@
 
     globals = {
       mapleader = " ";
-      neovide_transparency = 0.9;
+      neovide_opacity = 0.9;
     };
 
     extraConfigLuaPost = ''
