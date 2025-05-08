@@ -87,8 +87,6 @@
 
     zoom-us
 
-    firefox
-
     cargo
 
     jetbrains.idea-ultimate
@@ -110,6 +108,8 @@
     inputs.zen-browser.packages."${system}".default
 
     texliveFull
+
+    firefoxpwa
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -635,4 +635,9 @@
   };
 
   services.gnome-keyring.enable = true;
+
+  programs.firefox = {
+    enable = true;
+    nativeMessagingHosts = [pkgs.firefoxpwa];
+  };
 }
