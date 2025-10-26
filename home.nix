@@ -431,7 +431,6 @@
         "waybar &"
         "hyprpaper &"
         "dunst &"
-        "lxqt-policykit-agent"
       ];
 
       input = {

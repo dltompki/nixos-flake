@@ -99,7 +99,6 @@
     # from https://wiki.hyprland.org/Useful-Utilities/Must-have/
     dunst
     xdg-desktop-portal-hyprland
-    lxqt.lxqt-policykit
     qt6.qtwayland
     libsForQt5.qt5.qtwayland
 
@@ -282,7 +281,6 @@
 
   services.greetd = {
     enable = true;
-    vt = 2;
     settings = {
       default_session = {
         command = "${pkgs.greetd.tuigreet}/bin/tuigreet -tr --asterisks --cmd Hyprland";
