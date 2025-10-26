@@ -496,11 +496,6 @@
         new_status = "master";
       };
 
-      gestures = {
-        # See https://wiki.hyprland.org/Configuring/Variables/ for more
-        workspace_swipe = "off";
-      };
-
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;

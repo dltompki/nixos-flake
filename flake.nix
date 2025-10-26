@@ -41,7 +41,7 @@
             home-manager.users.dylan = {
               imports = [
                 ./home.nix
-                nixvim.homeManagerModules.nixvim
+                nixvim.homeModules.nixvim
               ];
             };
             home-manager.extraSpecialArgs = {inherit inputs;};
