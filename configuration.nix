@@ -88,7 +88,7 @@
     git
     wl-clipboard
     gcc
-    bitwarden
+    bitwarden-desktop
     gh
     zathura
     python3
