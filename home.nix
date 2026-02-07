@@ -512,9 +512,9 @@
       # Example windowrule v2
       # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
       # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
-      windowrulev2 = [
-        "float,title:rofi.*"
-        "suppressevent maximize,class:.*"
+      windowrule = [
+        "float on, match:title rofi.*"
+        "suppress_event maximize, match:class .*"
       ];
 
       # See https://wiki.hyprland.org/Configuring/Keywords/ for more
