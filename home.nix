@@ -89,7 +89,7 @@
 
     cargo
 
-    jetbrains.idea-ultimate
+    jetbrains.idea
     jetbrains.webstorm
     keepass #trying to store github creds
 
