@@ -283,11 +283,21 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet -tr --asterisks --cmd start-hyprland";
-        user = "dylan";
+        command = ''
+          ${pkgs.greetd.tuigreet}/bin/tuigreet \
+            --time \
+            --remember \
+            --remember-session \
+            --sessions ${config.services.displayManager.sessionData.desktops}/share/wayland-sessions
+        '';
+        user = "greeter";
       };
     };
   };
+
+  # suppress the default getty on tty1
+  systemd.services."getty@tty1".enable = false;
+  systemd.services."autovt@tty1".enable = false;
 
   environment.sessionVariables = {
     # EDITOR = "emacs";
