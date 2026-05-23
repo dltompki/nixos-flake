@@ -387,14 +387,6 @@
         };
       }
     ];
-
-    autoCmd = [
-      {
-        event = "FileType";
-        pattern = "gitcommit";
-        command = "lua vim.diagnostic.disable(0)";
-      }
-    ];
   };
 
   programs.zathura = {
