@@ -114,6 +114,8 @@
 
     zed
     steam
+
+    gemini-cli
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
