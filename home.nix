@@ -1,6 +1,7 @@
 {
   inputs,
   pkgs,
+  config,
   ...
 }: {
   # Home Manager needs a bit of information about you and the paths it should
@@ -404,6 +405,7 @@
   };
 
   wayland.windowManager.hyprland = {
+    configType = "hyprlang";
     enable = true;
     xwayland.enable = true;
     settings = {
@@ -605,6 +607,7 @@
   };
 
   gtk = {
+    gtk4.theme = config.gtk.theme;
     enable = true;
     theme = {
       name = "WhiteSur-Dark";
