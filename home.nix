@@ -106,7 +106,7 @@
 
     zellij
 
-    inputs.zen-browser.packages."${system}".default
+    inputs.zen-browser.packages."${stdenv.hostPlatform.system}".default
 
     texliveFull
 
@@ -629,6 +629,7 @@
 
   programs.firefox = {
     enable = true;
+    configPath = ".mozilla/firefox";
     nativeMessagingHosts = [pkgs.firefoxpwa];
   };
 }
