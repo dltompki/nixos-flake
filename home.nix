@@ -42,7 +42,7 @@
     rbw
     rofi-rbw-wayland
     pinentry-qt
-    nodejs_20
+    nodejs
     kdePackages.qtwayland
     brightnessctl
     docker
@@ -490,7 +490,6 @@
 
       dwindle = {
         # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
-        pseudotile = "yes"; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = "yes"; # you probably want this
       };
 
@@ -534,7 +533,6 @@
         "$mainMod, R, exec, rofi -normal-window -show drun"
         "$mainMod, W, exec, swaylock"
         "$mainMod, P, pseudo, # dwindle"
-        "$mainMod, J, togglesplit, # dwindle"
         "$mainMod, O, layoutmsg, orientationcycle left center"
 
         # Move focus with mainMod + arrow keys
