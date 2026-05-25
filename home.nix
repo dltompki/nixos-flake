@@ -135,6 +135,7 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
     ".config/waybar/config".source = dotfiles/waybar.json;
+    ".config/waybar/style.css".source = dotfiles/waybar.css;
 
     ".config/rofi/config.rasi".source = dotfiles/rofi/config.rasi;
     ".config/rofi/current.rasi".source = dotfiles/rofi/current.rasi;

@@ -1,0 +1,65 @@
+/* Everforest Waybar Theme - Minimal */
+@define-color bg #2d353b;
+@define-color fg #d3c6aa;
+@define-color blue #7fbbb3;
+@define-color aqua #83c092;
+@define-color green #a7c080;
+@define-color yellow #dbbc7f;
+@define-color orange #e69875;
+@define-color red #e67e80;
+@define-color grey #859289;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(45, 53, 59, 0.9);
+    color: @fg;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: @grey;
+}
+
+#workspaces button.active {
+    color: @blue;
+    border-bottom: 2px solid @blue;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-nvidia,
+#tray {
+    padding: 0 10px;
+    margin: 0 2px;
+}
+
+#pulseaudio { color: @yellow; }
+#network { color: @blue; }
+#custom-nvidia { 
+    color: @bg;
+    background-color: @green;
+    border-radius: 10px;
+    margin: 4px 2px;
+}
+#temperature { color: @orange; }
+#backlight { color: @aqua; }
+#battery { color: @green; }
+#battery.critical { color: @red; }
+#clock { color: @fg; }
