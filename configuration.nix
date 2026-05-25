@@ -15,6 +15,7 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # add support for OBS to make a virtual webcam
   boot.kernelModules = ["v4l2loopback"];
@@ -239,14 +240,6 @@
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
-
-    prime = {
-      sync.enable = true;
-
-      # Make sure to use the correct Bus ID values for your system!
-      nvidiaBusId = "PCI:1:0:0";
-      intelBusId = "PCI:7:0:0";
-    };
   };
 
   specialisation = {
@@ -322,7 +315,18 @@
     };
   };
 
-  services.asusd.enable = true;
+  services.asusd = {
+    enable = true;
+  };
+  services.supergfxd.enable = true;
+
+  programs.gamemode.enable = true;
+  programs.gamescope.enable = true;
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
 
   environment.extraSetup = ''
     ln -s ${pkgs.jdk}/lib   $out/lib/jdk

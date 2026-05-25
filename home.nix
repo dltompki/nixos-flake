@@ -113,9 +113,12 @@
     firefoxpwa
 
     zed
-    steam
 
     gemini-cli
+
+    mangohud
+    nvtopPackages.full
+    asusctl
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
