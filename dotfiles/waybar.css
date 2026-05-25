@@ -45,6 +45,7 @@ window#waybar {
 #network,
 #pulseaudio,
 #custom-nvidia,
+#custom-cpu,
 #tray {
     padding: 0 10px;
     margin: 0 2px;
@@ -55,6 +56,12 @@ window#waybar {
 #custom-nvidia { 
     color: @bg;
     background-color: @green;
+    border-radius: 10px;
+    margin: 4px 2px;
+}
+#custom-cpu { 
+    color: @bg;
+    background-color: @orange;
     border-radius: 10px;
     margin: 4px 2px;
 }
