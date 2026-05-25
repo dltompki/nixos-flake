@@ -136,6 +136,7 @@
     # '';
     ".config/waybar/config".source = dotfiles/waybar.json;
     ".config/waybar/style.css".source = dotfiles/waybar.css;
+    ".config/waybar/touchpad.py".source = dotfiles/touchpad.py;
 
     ".config/rofi/config.rasi".source = dotfiles/rofi/config.rasi;
     ".config/rofi/current.rasi".source = dotfiles/rofi/current.rasi;

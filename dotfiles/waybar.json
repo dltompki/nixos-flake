@@ -7,7 +7,13 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": [ "pulseaudio", "network", "custom/nvidia", "custom/cpu", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
+    "modules-right": [ "pulseaudio", "network", "custom/touchpad", "custom/nvidia", "custom/cpu", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
+    "custom/touchpad": {
+        "exec": "python3 ~/.config/waybar/touchpad.py",
+        "on-click": "python3 ~/.config/waybar/touchpad.py toggle",
+        "interval": 3,
+        "return-type": "json"
+    },
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,

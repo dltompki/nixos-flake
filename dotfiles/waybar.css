@@ -46,6 +46,7 @@ window#waybar {
 #pulseaudio,
 #custom-nvidia,
 #custom-cpu,
+#custom-touchpad,
 #tray {
     padding: 0 10px;
     margin: 0 2px;
@@ -53,6 +54,11 @@ window#waybar {
 
 #pulseaudio { color: @yellow; }
 #network { color: @blue; }
+#custom-touchpad.disabled {
+    color: @red;
+    background-color: rgba(230, 126, 128, 0.2);
+    border-radius: 10px;
+}
 #custom-nvidia { 
     color: @bg;
     background-color: @green;
