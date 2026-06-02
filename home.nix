@@ -632,7 +632,7 @@
 
   xdg.desktopEntries."cs2-optimized" = {
     name = "Counter-Strike 2 (Optimized)";
-    exec = "env SDL_VIDEO_DRIVER=wayland gamemoderun gamescope -f -W 2560 -H 1440 -r 165 -- steam -applaunch 730 -vulkan -novid -nojoy +engine_low_latency_sleep_after_client_tick true +fps_max 0";
+    exec = "env SDL_VIDEO_DRIVER=wayland gamemoderun gamescope -W 3440 -H 1440 -w 2560 -h 1440 -f -r 165 -- steam -applaunch 730 -vulkan -novid -nojoy +engine_low_latency_sleep_after_client_tick true +fps_max 0";
     icon = "steam_icon_730";
     terminal = false;
     categories = ["Game"];
